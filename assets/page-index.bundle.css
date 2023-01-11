@@ -1115,6 +1115,7 @@
 }
 .index-product {
   padding: 120px 0 176px 0;
+  position: relative;
 }
 .index-product .slideshow-pagination {
   bottom: 120px;
