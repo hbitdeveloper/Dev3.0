@@ -38,6 +38,9 @@
   width: 68.07292vw;
 }
 @media screen and (max-width: 768px) {
+  .video-swiper {
+    overflow-x: hidden;
+  }
   .video-swiper .swiper-slide {
     width: 100%;
   }
