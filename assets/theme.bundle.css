@@ -898,6 +898,9 @@ body .page-section-swiper .a-button-fill {
   .slideshow-navigation {
     display: none;
   }
+  body .page-section-swiper .slideshow-navigation {
+    display: none;
+  }
 }
 /* section title/a-button-fill */
 @media screen and (max-width: 1280px) {
