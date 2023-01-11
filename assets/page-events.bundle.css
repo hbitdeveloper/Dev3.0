@@ -284,10 +284,12 @@
     transform: scale(1) !important;
     width: 85.5vw !important;
     border-radius: 12vw 0px 0px 0px;
+    opacity: 0;
   }
   .card-swiper .card-swiper-container .swiper-slide-active {
     border-bottom: solid 4px var(--primary-color);
     margin: 0;
+    opacity: 1;
   }
   .card-swiper-slide-content {
     padding: 10.6vw 5.3vw;
