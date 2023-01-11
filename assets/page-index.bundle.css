@@ -1181,11 +1181,6 @@
   color: #000;
   margin-top: 40px;
 }
-.index-product .page-section-swiper .slideshow-navigation {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
 .index-product .slideshow-pagination-item.active .pagination-separator {
   background: var(--primary-color);
 }
