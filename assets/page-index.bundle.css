@@ -35,7 +35,7 @@
   flex: 1;
 }
 .video-swiper .swiper-slide {
-  width: 68.07292vw;
+  width: 100%;
 }
 .video-swiper .swiper-slide-active {
   border-bottom: solid 8px var(--primary-color);
