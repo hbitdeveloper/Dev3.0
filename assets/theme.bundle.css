@@ -988,7 +988,7 @@ body .page-section-swiper .a-button-fill {
 @media screen and (max-width: 768px) {
   /* font-size & line-height */
   body .text-base {
-    font-size: 3.46667vw;
+    font-size: 3.8vw;
     line-height: 5.2vw;
   }
   body .text-xs {
@@ -996,7 +996,7 @@ body .page-section-swiper .a-button-fill {
     line-height: 4vw;
   }
   body .text-sm {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
     line-height: 4.8vw;
   }
   body .text-lg {

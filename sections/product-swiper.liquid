@@ -1,5 +1,8 @@
-<div class="product-swiper-title h2">{{section.settings.title | escape}}</div>
-<div class="swiper-container slideshow product-slideshow">
+<div class="index-product-title page-section-title h2 index-container">
+    {{section.settings.title | escape}}
+</div>
+
+<div class="index-product-container relative swiper">
     <div class="swiper-wrapper">
         {% for product in collections[section.settings.home_featured_products].products limit: section.settings.products_to_show %}
             {% assign target = product.selected_or_first_available_variant %}
@@ -11,26 +14,35 @@
                 {% assign money_price = 'products.product.price.from_price_html' | t: price: money_price %}
             {% endif %}
 
-        <div class="swiper-slide slide">
-            <div class="slide-content absolute">
-                <div class="slide-product-name h3">{{product.title}}</div>
-                <a class="slide-product-button a-button-fill h4" href="{{product.url}}">{{section.settings.p_title | escape}} <span class="iconfont jackery-icon-arrow-right"></span></a>
-                <img src="{{product.featured_image | img_url: '600x'}}" alt="{{product.title}}" class="slide-product-img">
-                <div class="slide-product-price">
-                    <div class="slide-product-price-name h5">Sale price</div>
-                    <div class="slide-product-prices">
-                        <div class="slide-product-price-sale h3">{{ money_price }}</div>
+            <div class="swiper-slide flex flex-col relative">
+                    <div class="index-product-slide-content flex flex-col items-center">
+                        <div class="text-xl product-title text-center">{{product.title | escape}}</div>
+                        <a class="slide-link a-button-fill text-sm" href="{{product.url}}">
+                            {{section.settings.p_title | escape}}
+                            <span class="iconfont jackery-icon-arrow-right text-sm"></span>
+                        </a>
+                        <img src="{{product.featured_image | img_url: '600x'}}" alt="{{product.title}}">
 
-                        {%- unless product.price_varies == false and product.compare_at_price_varies %}
-                        <div class="slide-product-price-origin h3">{{ compare_at_price | money }}</div>
-                        {%- endunless -%}
+                        <div class="index-product-price flex flex-col">
+                            <div class="index-product-price-name text-sm">Sale price</div>
+                            <div class="index-product-prices flex">
+                                <div class="index-product-price-sale text-xl">{{ money_price }}</div>
+        
+                                {%- unless product.price_varies == false and product.compare_at_price_varies %}
+                                    <div class="index-product-price-origin text-xl">{{ compare_at_price | money }}</div>
+                                {%- endunless -%}
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <a class="slide-product-compare underlines-btn">{{section.settings.p_more | escape}} <span class="iconfont jackery-icon-arrow-right"></span></a>
+
+                    <a class="index-product-compare underlines-btn text-xl">
+                        {{section.settings.p_more | escape}}
+                        <span class="iconfont jackery-icon-arrow-right text-sm"></span>
+                    </a>
             </div>
-        </div>
         {% endfor %}
     </div>
+
     <div class="slideshow-pagination"></div>
     <div class="slideshow-navigation">
         <div class="slideshow-navigation-button prev"><span class="iconfont jackery-icon-Next"></span></div>
@@ -44,7 +56,7 @@
 {
   "name": "Product swiper",
   "tag": "section",
-  "class": "section product-swiper",
+  "class": "section index-product",
   "settings": [
       {"type": "textarea", "id": "title", "label": "Section title", "default": "Featured Products"},
       {"type": "text", "id": "p_title", "label": "Link text", "default": "Shop now"},
