@@ -131,7 +131,9 @@
                         self.animate();
                     },
                     resize: function () {
-                        this.update()
+                        setTimeout(() => { // FIX SWIPER PC-MOBILE CSS BUG
+                            this.update()
+                        }, 600);
                     }
                 },
                 navigation: {
