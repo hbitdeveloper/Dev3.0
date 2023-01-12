@@ -1245,7 +1245,10 @@
 .voice-banner {
   background: #F0F0F0;
 }
-.slideshow-pagination-item .voice-banner .voice-image-swiper-container {
+.index-voice .slideshow-pagination-item.active .pagination-separator {
+  background: var(--primary-color);
+}
+.voice-banner .voice-image-swiper-container {
   height: 100%;
   width: 50%;
 }
