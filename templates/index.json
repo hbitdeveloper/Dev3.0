@@ -203,9 +203,26 @@
     "voice_swiper": {
       "type": "voice-swiper",
       "blocks": {
+        "1698624f-63d3-44df-a160-9c25edd33b20": {
+          "type": "image",
+          "settings": {
+            "p_name": "Portable\nPower Stati-3",
+            "p_link": "https:\/\/us.roborock.com\/pages\/roborock-q7",
+            "rating": 2,
+            "review_title": "Great little vacuum",
+            "user_comment": "PC\/H5 Gilroy 字间距0 不加粗  字号24 行高36",
+            "user_name": "DeLarse M.",
+            "user_avator": "shopify:\/\/shop_images\/2x.png",
+            "image": "shopify:\/\/shop_images\/pc-2.png",
+            "m_image": "shopify:\/\/shop_images\/mb-2.jpg",
+            "pc_x": 20,
+            "pc_y": 11,
+            "m_x": 63,
+            "m_y": 37
+          }
+        },
         "793b22ad-996f-4971-b006-ebd433677546": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "p_name": "Portable\nPower Stati-1",
             "p_link": "https:\/\/us.roborock.com\/pages\/roborock-q7",
@@ -239,30 +256,12 @@
             "m_x": 61,
             "m_y": 1
           }
-        },
-        "1698624f-63d3-44df-a160-9c25edd33b20": {
-          "type": "image",
-          "settings": {
-            "p_name": "Portable\nPower Stati-3",
-            "p_link": "https:\/\/us.roborock.com\/pages\/roborock-q7",
-            "rating": 2,
-            "review_title": "Great little vacuum",
-            "user_comment": "PC\/H5 Gilroy 字间距0 不加粗  字号24 行高36",
-            "user_name": "DeLarse M.",
-            "user_avator": "shopify:\/\/shop_images\/2x.png",
-            "image": "shopify:\/\/shop_images\/pc-2.png",
-            "m_image": "shopify:\/\/shop_images\/mb-2.jpg",
-            "pc_x": 28,
-            "pc_y": 14,
-            "m_x": 63,
-            "m_y": 37
-          }
         }
       },
       "block_order": [
+        "1698624f-63d3-44df-a160-9c25edd33b20",
         "793b22ad-996f-4971-b006-ebd433677546",
-        "2093c4e1-6fe0-4dd1-8bd5-71616d912ae2",
-        "1698624f-63d3-44df-a160-9c25edd33b20"
+        "2093c4e1-6fe0-4dd1-8bd5-71616d912ae2"
       ],
       "settings": {
         "title": "Voice from Our Custo"
