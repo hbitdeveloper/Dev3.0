@@ -678,6 +678,9 @@ body .text-3xl {
   margin: 0 8px;
   background: #ccc;
 }
+.slideshow-pagination-item.active {
+  background: var(--primary-color);
+}
 .slideshow-pagination-item:hover,
 .slideshow-pagination-item:focus {
   cursor: pointer;
@@ -695,9 +698,6 @@ body .text-3xl {
   height: 4px;
   background: #ccc;
   transition: all 0.3s ease;
-}
-.pagination-separator.active {
-  background: var(--primary-color);
 }
 .pagination-separator-loader {
   position: absolute;
