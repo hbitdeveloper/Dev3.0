@@ -292,31 +292,6 @@ p,
   line-height: 1;
 }
 /* button */
-/* -----rate----- */
-.rate {
-  float: left;
-  height: 1.71875vw;
-  line-height: 1.71875vw;
-}
-.rate > label {
-  color: #ccc;
-  cursor: pointer;
-  float: right;
-  font-size: 1.71875vw;
-  margin-right: 8px;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 1.71875vw;
-}
-.rate > label::before {
-  content: '\ea29';
-  font-family: 'iconfont';
-}
-.rate > label.checked ~ label,
-.rate > label.checked {
-  color: #ffc700;
-}
-/* -----rate----- */
 /* -----按钮箭头----- */
 .ra-btn {
   align-items: center;
@@ -442,16 +417,6 @@ p,
     width: 100%;
   }
   /* 版心 */
-  /* -----rate----- */
-  .rate {
-    height: 4.4vw;
-    line-height: 4.4vw;
-  }
-  .rate > label {
-    font-size: 4.4vw;
-    width: 4.4vw;
-  }
-  /* -----rate----- */
 }
 /* font-size & line-height */
 body .text-base {
@@ -491,6 +456,25 @@ body .text-3xl {
   object-position: center;
 }
 /* 图片显示样式 */
+/* float */
+.float-r {
+  float: right;
+}
+.float-l {
+  float: left;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+/* float */
 /* 定位/flex/display */
 .absolute {
   position: absolute;

@@ -1,5 +1,5 @@
-<section class="user-voice">
-        <div class="voice-banner">
+<section class="index-voice-section">
+        {% comment %} <div class="voice-banner">
             <div class="thumbsSlider-slideshow swiper-container">
                 <div class="swiper-container slideshow slideshow3333">
                     <div class="swiper-wrapper">
@@ -80,8 +80,92 @@
                     </div>
             </div>
             </div>
+        </div> {% endcomment %}
+
+    <div class="index-voice-title h2 text-center mobile-block">
+        {{section.settings.title | escape}}
+    </div>
+
+    <div class="index-voice relative">
+        <div class="voice-banner absolute left-0 right-0 bottom-0 top-0 flex">
+            <div class="voice-image-swiper-container" style="overflow-x: hidden;">
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        <div class="swiper-slide relative">
+                            <img class="vocie-banner pc-block" src="{{block.settings.image | img_url: '960x'}}" alt="{{block.settings.p_name | escape}}">
+                            <img class="vocie-banner mobile-block" src="{{block.settings.m_image | img_url: '750x'}}" alt="{{block.settings.p_name | escape}}">
+
+                            <a href="{{block.settings.p_link}}" class="voice-pointer voice-pointer-p flex absolute items-center" style="bottom: {{block.settings.pc_y}}vw;left: {{block.settings.pc_x}}vw;">
+                                <img src="https://cdn.shopify.com/s/files/1/0550/0524/9633/files/icon-_2x_0cdd2b58-1c28-427e-af1b-b68c5f8df76d.png?v=1670312292" alt="{{block.settings.p_name}}">
+
+                                <div class="voice-pointer-title h5">{{block.settings.p_name | escape}}</div>
+                            </a>
+
+                            <a href="{{block.settings.p_link}}" class="voice-pointer voice-pointer-m flex absolute items-center" style="bottom: {{block.settings.m_y}}vw;left: {{block.settings.m_x}}vw;">
+                                <img src="https://cdn.shopify.com/s/files/1/0550/0524/9633/files/icon-_2x_0cdd2b58-1c28-427e-af1b-b68c5f8df76d.png?v=1670312292" alt="{{block.settings.p_name}}">
+
+                                <div class="voice-pointer-title h5">{{block.settings.p_name | escape}}</div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
-    </section>
+
+
+        <div class="voice-list-container relative">
+            <div class="index-voice-title h2 pc-block">
+                {{section.settings.title | escape}}
+            </div>
+
+            <div class="voice-list-swiper-container swiper">
+                <div class="swiper-wrapper flex">
+                    {% for block in section.blocks %}
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="clearfix">
+                                <div class="rate">
+                                    <label title="5.0" rate="5" {% if block.settings.rating == 5 %}class="checked"{% endif %}></label>
+                                    <label title="4.0" rate="4" {% if block.settings.rating == 4 %}class="checked"{% endif %}></label>
+                                    <label title="3.0" rate="3" {% if block.settings.rating == 3 %}class="checked"{% endif %}></label>
+                                    <label title="2.0" rate="2" {% if block.settings.rating == 2 %}class="checked"{% endif %}></label>
+                                    <label title="1.0" rate="1" {% if block.settings.rating == 1 %}class="checked"{% endif %}></label>
+                                </div>
+                            </div>
+    
+                            <div class="voice-item-title h5">{{block.settings.review_title | escape}}</div>
+                            <div class="vocie-item-content h5 text-overflow-3">
+                                {{block.settings.user_comment | escape}}
+                            </div>
+    
+                            <div class="voice-content-all text-center relative">
+                                <span class="iconfont jackery-icon-arrow-right h5"></span>
+                            </div>
+    
+                            <div class="voice-user flex items-center">
+                                <div class="user-avator relative">
+                                    <img class="avator" src="{{block.settings.user_avator | img_url: '77x'}}" alt="{{block.settings.user_name}}">
+    
+                                    <img class="renzheng absolute bottom-0 right-0" src="https://cdn.shopify.com/s/files/1/0550/0524/9633/files/icon-_1_2x_f1b3030c-8c66-4b42-bb45-620ff89a90a2.png?v=1670307826" alt="renzheng">
+                                </div>
+                                <div class="user-name h4 font-bold">{{block.settings.user_name}}</div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="pagination-navigation flex">
+                <div class="slideshow-pagination-voice"></div>
+
+                <div class="slideshow-navigation flex">
+                    <div class="slideshow-navigation-button prev"><span class="iconfont jackery-icon-Next"></span></div>
+                    <div class="slideshow-navigation-button next"><span class="iconfont jackery-icon-Next"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <script src="{{ 'voice-swiper.bundle.js' | asset_url }}" defer="defer">
 
 </script>
