@@ -205,6 +205,7 @@
       "blocks": {
         "793b22ad-996f-4971-b006-ebd433677546": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "p_name": "Portable\nPower Stati-1",
             "p_link": "https:\/\/us.roborock.com\/pages\/roborock-q7",
@@ -235,8 +236,8 @@
             "m_image": "shopify:\/\/shop_images\/mb-3.jpg",
             "pc_x": 28,
             "pc_y": 14,
-            "m_x": 63,
-            "m_y": 37
+            "m_x": 61,
+            "m_y": 1
           }
         },
         "1698624f-63d3-44df-a160-9c25edd33b20": {
