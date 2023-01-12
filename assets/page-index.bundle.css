@@ -1245,7 +1245,7 @@
 .voice-banner {
   background: #F0F0F0;
 }
-.voice-banner .voice-image-swiper-container {
+.slideshow-pagination-item .voice-banner .voice-image-swiper-container {
   height: 100%;
   width: 50%;
 }
@@ -1409,6 +1409,7 @@
 @media screen and (max-width: 768px) {
   .index-voice {
     height: auto;
+    margin-bottom: 14vw;
     padding: 78.26667vw 0 0 8vw;
   }
   .voice-banner {
@@ -1416,7 +1417,7 @@
   }
   .index-voice-title {
     padding: 0;
-    margin: 14vw auto 8.66667vw auto;
+    margin: 0 auto 8.66667vw auto;
   }
   .voice-banner .voice-image-swiper-container {
     height: 100%;
@@ -1477,6 +1478,7 @@
   }
   .voice-pointer-title {
     line-height: 3.73333vw;
+    color: #333;
   }
   .voice-list-swiper-container {
     border-radius: 12vw 0px 0px 0px;

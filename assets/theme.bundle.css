@@ -696,6 +696,9 @@ body .text-3xl {
   background: #ccc;
   transition: all 0.3s ease;
 }
+.pagination-separator.active {
+  background: var(--primary-color);
+}
 .pagination-separator-loader {
   position: absolute;
   top: 0;
