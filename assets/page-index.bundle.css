@@ -1121,17 +1121,17 @@
   }
 }
 .index-product {
-  padding: 6.25vw 0 9.16667vw 0;
+  padding: 120px 0 176px 0;
   position: relative;
 }
 .index-product .slideshow-pagination {
-  bottom: 6.25vw;
+  bottom: 120px;
 }
 .index-product .index-product-title {
   margin-bottom: 0;
 }
 .index-product .index-product-container {
-  padding-top: 2.60417vw;
+  padding-top: 50px;
 }
 .index-product .index-product-container .swiper-slide {
   position: relative;
@@ -1139,21 +1139,22 @@
   transition: all 0.3s;
   transform-origin: left center;
   opacity: 0.4;
-  width: 52.5vw;
+  width: 1008px;
   pointer-events: none;
+  /* overflow: hidden; */
 }
 .index-product .index-product-container .swiper-slide-prev {
   transform-origin: right center;
 }
 .index-product .index-product-container .swiper-slide-active {
   transform: scale(1) !important;
-  margin: 0 1.30208vw;
+  margin: 0 25px;
   opacity: 1;
   pointer-events: all;
 }
 .index-product .index-product-slide-content img {
-  width: 31.25vw;
-  height: 16.66667vw;
+  width: 600px;
+  height: 320px;
   object-fit: contain;
 }
 .index-product-slide-content .product-title {
@@ -1162,12 +1163,12 @@
 .index-product-slide-content {
   position: relative;
   z-index: 9;
-  padding: 3.125vw 0 2.29167vw 0;
-  height: 36.45833vw;
+  padding: 60px 0 44px 0;
+  height: 700px;
   box-shadow: 0px 2px 20px 12px rgba(98, 98, 98, 0.1);
 }
 .index-product .index-product-slide-content .a-button-fill {
-  margin: 1.35417vw auto;
+  margin: 26px auto ;
 }
 .index-product .index-product-slide-content .a-button-fill,
 .index-product .index-product-slide-content .jackery-icon-arrow-right {
@@ -1178,14 +1179,14 @@
   color: var(--primary-color);
 }
 .index-product-price-sale {
-  margin-right: 1.82292vw;
+  margin-right: 35px;
 }
 .index-product .index-product-compare {
   display: block;
   text-align: center;
   margin: 0 auto;
   color: #000;
-  margin-top: 2.08333vw;
+  margin-top: 40px;
 }
 .index-product .slideshow-pagination-item.active .pagination-separator {
   background: var(--primary-color);
