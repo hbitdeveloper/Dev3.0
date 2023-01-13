@@ -16,7 +16,7 @@
 
             <div class="swiper-slide flex flex-col relative">
                     <div class="index-product-slide-content flex flex-col items-center">
-                        <div class="text-xl product-title text-center">{{product.title | escape}}</div>
+                        <div class="h2 product-title text-center">{{product.title | escape}}</div>
                         <a class="slide-link a-button-fill text-sm" href="{{product.url}}">
                             {{section.settings.p_title | escape}}
                             <span class="iconfont jackery-icon-arrow-right text-sm"></span>
@@ -24,12 +24,12 @@
                         <img src="{{product.featured_image | img_url: '600x'}}" alt="{{product.title}}">
 
                         <div class="index-product-price flex flex-col">
-                            <div class="index-product-price-name text-sm">Sale price</div>
+                            <div class="index-product-price-name h3">Sale price</div>
                             <div class="index-product-prices flex">
-                                <div class="index-product-price-sale text-xl">{{ money_price }}</div>
+                                <div class="index-product-price-sale h3">{{ money_price }}</div>
         
                                 {%- unless product.price_varies == false and product.compare_at_price_varies %}
-                                    <div class="index-product-price-origin text-xl">{{ compare_at_price | money }}</div>
+                                    <div class="index-product-price-origin h3">{{ compare_at_price | money }}</div>
                                 {%- endunless -%}
                             </div>
                         </div>

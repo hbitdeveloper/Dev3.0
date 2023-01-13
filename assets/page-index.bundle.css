@@ -1121,17 +1121,17 @@
   }
 }
 .index-product {
-  padding: 120px 0 176px 0;
+  padding: 6.25vw 0 9.16667vw 0;
   position: relative;
 }
 .index-product .slideshow-pagination {
-  bottom: 120px;
+  bottom: 6.25vw;
 }
 .index-product .index-product-title {
   margin-bottom: 0;
 }
 .index-product .index-product-container {
-  padding-top: 50px;
+  padding-top: 2.60417vw;
 }
 .index-product .index-product-container .swiper-slide {
   position: relative;
@@ -1139,36 +1139,37 @@
   transition: all 0.3s;
   transform-origin: left center;
   opacity: 0.4;
-  width: 1008px;
+  width: 52.5vw;
+  padding: 0 25px;
   pointer-events: none;
-  /* overflow: hidden; */
 }
 .index-product .index-product-container .swiper-slide-prev {
   transform-origin: right center;
 }
 .index-product .index-product-container .swiper-slide-active {
   transform: scale(1) !important;
-  margin: 0 25px;
   opacity: 1;
   pointer-events: all;
 }
 .index-product .index-product-slide-content img {
-  width: 600px;
-  height: 320px;
+  width: 31.25vw;
+  height: 16.66667vw;
   object-fit: contain;
 }
 .index-product-slide-content .product-title {
   color: #666;
+  line-height: 1;
+  font-weight: 500;
+  padding: 0 2.86458vw;
 }
 .index-product-slide-content {
   position: relative;
   z-index: 9;
-  padding: 60px 0 44px 0;
-  height: 700px;
+  padding: 3.125vw 0 2.29167vw 0;
   box-shadow: 0px 2px 20px 12px rgba(98, 98, 98, 0.1);
 }
 .index-product .index-product-slide-content .a-button-fill {
-  margin: 26px auto ;
+  margin: 1.35417vw auto;
 }
 .index-product .index-product-slide-content .a-button-fill,
 .index-product .index-product-slide-content .jackery-icon-arrow-right {
@@ -1179,14 +1180,14 @@
   color: var(--primary-color);
 }
 .index-product-price-sale {
-  margin-right: 35px;
+  margin-right: 1.82292vw;
 }
 .index-product .index-product-compare {
   display: block;
   text-align: center;
   margin: 0 auto;
   color: #000;
-  margin-top: 40px;
+  margin-top: 2.08333vw;
 }
 .index-product .slideshow-pagination-item.active .pagination-separator {
   background: var(--primary-color);
@@ -1201,7 +1202,6 @@
   }
   .index-product-slide-content {
     padding: 11.6vw 3.6vw 22vw 3.6vw;
-    height: 121vw;
     /* box-shadow: 0px 1px 10px 6px rgba(98,98,98,0.1); */
   }
   .index-product .index-product-container .swiper-slide {
