@@ -29,7 +29,7 @@
                                 <div class="index-product-price-sale h3">{{ money_price }}</div>
         
                                 {%- unless product.price_varies == false and product.compare_at_price_varies %}
-                                    <div class="index-product-price-origin h3">{{ compare_at_price | money }}</div>
+                                    <div class="index-product-price-origin h3" style="text-decoration: line-through;">{{ compare_at_price | money }}</div>
                                 {%- endunless -%}
                             </div>
                         </div>

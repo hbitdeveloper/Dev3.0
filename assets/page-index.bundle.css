@@ -1209,6 +1209,7 @@
     transform: scale(1) !important;
     width: 85vw!important;
     opacity: 0;
+    padding: 0;
   }
   .index-product .index-product-container .swiper-slide-active {
     opacity: 1;
