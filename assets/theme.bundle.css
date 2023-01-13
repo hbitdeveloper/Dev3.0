@@ -707,6 +707,19 @@ body .text-3xl {
   height: 100%;
   transform-origin: 0 0;
 }
+@media screen and (max-width: 1280px) {
+  .slideshow-pagination-item {
+    margin: 0 6px;
+  }
+  .slideshow-pagination-item.active .pagination-separator {
+    width: 70px;
+    height: 4px;
+  }
+  .pagination-separator {
+    width: 40px;
+    height: 3px;
+  }
+}
 /* slideshow-pagination */
 /* slideshow-navigation-button */
 .slideshow-navigation-button {

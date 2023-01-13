@@ -1374,6 +1374,7 @@
 }
 .voice-pointer-title {
   line-height: 1.45833vw;
+  color: #000;
 }
 .clearfix:after {
   content: " ";
