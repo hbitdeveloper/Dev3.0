@@ -1125,13 +1125,14 @@
   position: relative;
 }
 .index-product .slideshow-pagination {
-  bottom: 6.25vw;
+  bottom: 0;
 }
 .index-product .index-product-title {
   margin-bottom: 0;
 }
 .index-product .index-product-container {
   padding-top: 2.60417vw;
+  padding-bottom: 2.60417vw;
 }
 .index-product .index-product-container .swiper-slide {
   position: relative;
